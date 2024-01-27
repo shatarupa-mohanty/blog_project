@@ -43,10 +43,12 @@ a {
 .main_contain {
     display: grid;
     gap: 1.3rem;
-    grid-template-columns: repeat(1, 1fr);
+    /*grid-template-columns: repeat(1, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
+    justify-content: center;
 }
 
-@media (min-width:740px) {
+/*@media (min-width:740px) {
     .main_contain {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -62,7 +64,7 @@ a {
     .main_contain {
         grid-template-columns: repeat(4, 1fr);
     }
-}
+}*/
 
 
 
